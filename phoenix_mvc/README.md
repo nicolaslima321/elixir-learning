@@ -1,6 +1,4 @@
-# Repository to learn Elixir
-
-# PhoenixMvc (To learn Phoenix framework)
+# PhoenixMvc
 
 To start your Phoenix server:
 

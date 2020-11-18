@@ -33,5 +33,7 @@ defmodule M do
                -> IO.puts "Default"
         end
         # Tips: case reminds a switch case
+
+        IO.puts "Ternary : #{if age > 18, do: "Can vote", else: "Cant Vote"}"
     end
 end
