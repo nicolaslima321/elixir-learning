@@ -1,6 +1,6 @@
 defmodule M do
     def main do 
-        name = IO.gets("Whats your name? ") |> String.trim
+        name = IO.gets("Type World ") |> String.trim
         IO.puts "Hello #{name}"
     end
 end
