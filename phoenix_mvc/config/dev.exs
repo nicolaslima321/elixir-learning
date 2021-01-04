@@ -2,6 +2,7 @@ use Mix.Config
 
 # Configure your database
 config :phoenix_mvc, PhoenixMvc.Repo,
+  adapter: Ecto.Adapters.Postgres,
   username: "root",
   password: "",
   database: "phoenix_mvc_dev",
