@@ -23,7 +23,13 @@ defmodule FizzBuzz do
     end
   end
 
-  def main do
+  def main(file_name) do
+    file_name
+    |> File.read()
+    |> handle_file_read()
+
+    IO.puts "#{inspect(file)}"
+
     Enum.each([1, 3, 9, 12], fn (v) ->
       IO.puts "#{v}"
       IO.puts "#{is_fizz(v)}"
@@ -31,4 +37,10 @@ defmodule FizzBuzz do
       IO.puts "#{is_fizz_buzz(v)}"
     end)
   end
+
+  def handle_file_read({:ok, result}) do
+    list = String.split(result, ",")
+  end
+
+  def handle_file_read({:error, reason}), do: reason
 end
